@@ -36,6 +36,15 @@
             .btn-phone:hover {
                 background-color: #1b5e20;
             }
+            .video-frame {
+                border-radius: 16px;
+                box-shadow: 0 10px 30px rgba(0. 0. 0. 0.5);
+                border: none;
+                transition: transform 0.3s ease;
+            }
+            .video-frame:hover {
+                transform: scale(1.01);
+            }
         </style>
     </head>
     <body>
@@ -45,7 +54,7 @@
         <br><br>
         <a href="tel:+375336308484" class="my-button btn-phone">Показать номер 📲</a> <a href="https://t.me/PavelOlegovichMinsk" class="my-button bth-tg" target="_blank">Написать в Telegram</a>
         <div style="margin-top: 30px;">
-            <iframe
+            <iframe class="video-frame"
             width="560"
             height="315"
             src="https://www.youtube.com/embed/67dU_Zs0ZZI?si=S_td46A5RTmN5UW-"
