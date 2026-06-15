@@ -21,6 +21,7 @@
                 border-radius: 8px;
                 font-weight: bold;
                 transition: background-color 0.3s;
+                animation: breathe 2.5s infinite ease-in-out;
             }
 
             .bth-tg {
@@ -74,6 +75,11 @@
             }
             .skills-block h2 {
                 margin-top: 0;
+            }
+            @keyframes breathe {
+                0% {transform: scale(1);}
+                50% {transform: scale(1.05);}
+                100%{transform: scale(1);}
             }
         </style>
     </head>
