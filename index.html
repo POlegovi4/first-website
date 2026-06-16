@@ -107,6 +107,7 @@
             .weather-widget p {
                 margin: 0;
                 font-size: 16px;
+                text-transform: capitalize;
             }
 
             @keyframes breathe {
@@ -166,5 +167,19 @@
             allowfullscreen>
         </iframe>
     </div>
+    <script>
+        const apiKey = 'bcdfbef1d14213ccbbb5466320921a7d';
+        const city = 'Minsk';
+        const url = 'https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&lang=ru&appid=${apiKey}';
+
+        fetch(url)
+           .then(response => response.json())
+           .then(data => {
+            const temp = Math.round(data.main.temp);
+            document.querySelector('.weather-temp').innerText = '☀️ =${temp}°C';
+            document.querySelector('.weather-widget p').innerText = data.weather[0].description;
+           })
+           .catch(error => console.log('ошибка:', error));
+    </script>
     </body>
     </html>
