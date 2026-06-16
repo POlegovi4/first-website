@@ -176,7 +176,7 @@
            .then(response => response.json())
            .then(data => {
             const temp = Math.round(data.main.temp);
-            document.querySelector('.weather-temp').innerText = '☀️ +' + temp +'°C';
+            document.querySelector('.weather-temp').innerText = '🌤️ +' + temp +'°C';
             document.querySelector('.weather-widget p').innerText = data.weather[0].description;
            })
            .catch(error => console.log('ошибка:', error));
