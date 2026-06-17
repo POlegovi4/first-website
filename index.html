@@ -267,12 +267,12 @@
                 document.getElementById('usd-rate').innerText = usdRate + ' BYN';
              })
              .catch(error => console.log('Ошибка USD;', error));
-             
+
            fetch('https://open.er-api.com/v6/latest/EUR')
              .then(response => response.json())
              .then(data => {
                 const eurRate = data.rates.BYD.toFixed(2);
-                document.getElementById('eur-rate').innerText = eurRate + 'BYN';
+                document.getElementById('eur-rate').innerText = eurRate + ' BYN';
              })
              .catch(error => console.log('Ошибка EUR:', error))
 
