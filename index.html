@@ -129,6 +129,12 @@
                 margin: 0;
             }
 
+            .neon-greeting {
+                font-weight: bold;
+                color: #fff;
+                animation: neonRainbow 5s linear infinite;
+            }
+
             @keyframes breathe {
                 0% {transform: scale(1);}
                 50% {transform: scale(1.05);}
@@ -147,11 +153,17 @@
                 h1,p, .profile-card {
                     animation: fadeIn 2.5s ease-out forwards;
                 }
+            @keyframes neonRainbow {
+                0%, 100% { text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #0ff, 0 0 30px #0ff;}
+                33% { text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px rgb(255, 0, 98), 0 0 30px rgb(255, 0, 98);}
+                66% { text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff0, 0 0 30px #ff0;}
+            } 
         </style>
     </head>
     <body>
         <h1>Frontend Dev ♻️</h1>
-        <p><span id="greeting">Привет</span>. Это мой учебный проект в рамках саморазвития. Web-разработка,Web-дизайн,работа с ИИ ⚠️</p>
+        <p><span id="greeting">Привет</span>. Это мой учебный проект в рамках саморазвития. Web-разработка,Web-диайн,работа с ИИ ⚠️</p>
+        <p class="neon-greeting"><span id="greeting">Привет</span>. Это мой учебный проект в рамках саморазвития. Web-разработка,Web-диайн,работа с ИИ ⚠️</p>
         <div class="profile-card">
             
             <div class="skills-block">
