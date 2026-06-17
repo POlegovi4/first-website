@@ -275,6 +275,16 @@
                 document.getElementById('eur-rate').innerText = eurRate + ' BYN';
              })
              .catch(error => console.log('Ошибка EUR:', error))
+            
+           fetch('https://open.er-api.com/v6/latest/RUB')
+             .then(response => response.json())
+             .then(data => {
+                const rubRate = (data.rates.BYN * 100).toFixed(2);
+                document.getElementById('rub-rate').innerText = rubRate + ' BYN';
+             })
+             .catch(error => console.log('Ошибка RUB:', error));
+             
+             
 
     </script>
     </body>
