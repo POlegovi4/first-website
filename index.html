@@ -130,9 +130,9 @@
             }
 
             .neon-greeting {
-                font-weight: bold;
+                font-weight: normal;
                 color: #fff;
-                animation: neonRainbow 5s linear infinite;
+                animation: neonRainbow 6s ease-in-out infinite;
             }
 
             @keyframes breathe {
@@ -154,9 +154,9 @@
                     animation: fadeIn 2.5s ease-out forwards;
                 }
             @keyframes neonRainbow {
-                0%, 100% { text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #0ff, 0 0 30px #0ff;}
-                33% { text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px rgb(255, 0, 98), 0 0 30px rgb(255, 0, 98);}
-                66% { text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff0, 0 0 30px #ff0;}
+                0%, 100% { text-shadow: 0 0 12px rgba(0, 255, 255, 0.4);}
+                33% { text-shadow: 0 0 12px rgba(255, 0, 255, 0.4);}
+                66% { text-shadow: 0 0 12px rgba(255, 255, 0, 0.4);}
             } 
         </style>
     </head>
