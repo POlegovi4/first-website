@@ -283,6 +283,14 @@
                 document.getElementById('rub-rate').innerText = rubRate + ' BYN';
              })
              .catch(error => console.log('Ошибка RUB:', error));
+
+           fetch('https://open.er-api.com/v6/latest/CNY')
+             .then(response => response.json())
+             .then(data => {
+                const cnyRate = (data.rates.BYN * 10).toFixed(2);
+                document.getElementById('cny-rate').innerText = cnyRate + ' BYN';
+             })
+             .catch(error => console.log('Ошибка CNY:', error));  
              
              
 
