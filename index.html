@@ -267,6 +267,7 @@
                 document.getElementById('usd-rate').innerText = usdRate + ' BYN';
              })
              .catch(error => console.log('Ошибка USD;', error));
+             
            fetch('https://open.er-api.com/v6/latest/EUR')
              .then(response => response.json())
              .then(data => {
