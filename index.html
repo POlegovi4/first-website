@@ -263,10 +263,10 @@
            fetch('https://open.er-api.com/v6/latest/USD')
              .then(response => response.json())
              .then(data => {
-                const usRate = data.rates.BYN.toFixed(2);
+                const usdRate = data.rates.BYN.toFixed(2);
                 document.getElementById('usd-rate').innerText = usdRate + ' BYN';
              })
-             .catch(error => console.log('Ошибка USD;', error));
+             .catch(error => console.log('Ошибка USD;', error)); 
 
     </script>
     </body>
