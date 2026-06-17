@@ -266,8 +266,8 @@
                 const usRate = data.rates.BYN.toFixed(2);
                 document.getElementById('usd-rate').innerText = usdRate + ' BYN';
              })
-             .catch(error => console.log('Ошибка USD;'));
-             
+             .catch(error => console.log('Ошибка USD;', error));
+
     </script>
     </body>
     </html>
