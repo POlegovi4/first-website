@@ -259,6 +259,15 @@
             document.querySelector('.weather-widget p').innerText = data.weather[0].description;
            })
            .catch(error => console.log('ошибка:', error));
+
+           fetch('https://open.er-api.com/v6/latest/USD')
+             .then(response => response.json())
+             .then(data => {
+                const usRate = data.rates.BYN.toFixed(2);
+                document.getElementById('usd-rate').innerText = usdRate + ' BYN';
+             })
+             .catch(error => console.log('Ошибка USD;'));
+             
     </script>
     </body>
     </html>
