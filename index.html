@@ -348,7 +348,7 @@
                 const resultSpan = document.getElementById('calc-result');
 
              // Получаем число, ввел пользователь
-             const amount = perseFloat(amountInput.value);
+             const amount = parseFloat(amountInput.value);
              
              // Если поле пустое или там не разборчиво, ставим 0.00 и выходим
              if (!amount || isNaN(amount)) {
