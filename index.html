@@ -135,22 +135,45 @@
             }
             .currency-widget {
                 margin-top: 25px;
-                padding: 10px 20px;
-                background: rgba(255, 255, 255, 0,08);
+                padding: 20px;
+                background: rgba(255, 255, 255, 0,06);
                 border-radius: 20px;
-                display: inline-block;
-                width: 95%;
+                margin: 20px;
                 max-width: 440px;
-                box-sizing: border-box;
+                border: 1px solid rgda(255, 255, 255, 0.1);
             }
             .currency-rates {
                 display: flex;
                 justify-content: center;
-                gap: 30px;
-                align-items: center;
-                font-size: 14px;
-                color: #fff;
+                gap: 15px;
+                margin-bottom: 20px;
+                padding-bottom: 15px;
+                border-bottom: 1px solid rgda(255, 255, 255, 0.1);
             }
+            .currency-calc {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+            .currency-calc input:focus,
+            .currency-calc select:focus {
+                border-color: #00ffcc;
+                box-shadow: 0 0 10px rgda(0, 255, 204, 0.4);
+            }
+            .calc-result-box {
+                width: 100%;
+                text-align: center;
+                margin-top: 15px;
+                font-size: 16px;
+                color: #888888;
+            }
+            #calc-result {
+                color: #00ffcc;
+                font-weight: bold;
+                font-size: 18px;
+            }
+
             .rate-item span {
                 font-weight: bold;
                 color: #ec9f3bf2;
@@ -212,7 +235,7 @@
         </a>
 
         <div style="margin-top: 20px;"
-             class="currency-wiget fade-in">
+             class="currency-widget fade-in">
             <div class="currency-rates">
                 <div class="rate-item">🇺🇸 USD: <span id="usd-rate">Загрузка...</span></div>
                 <div class="rate-item">🇪🇺 EUR: <span id="eur-rate">Загрузка...</span></div>
