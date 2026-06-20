@@ -200,8 +200,8 @@
             
            <div class="weather-widget">
               <h3>Minsk</h3>
-              <div class="weather-temp">☀️ +22°C</div>
-              <p>Ясно</p>
+              <div class="weather-temp">☀️ Загрузка...</div>
+              <p>Загрузка...</p>
            </div>   
         </div>
         <br><br>
@@ -212,14 +212,28 @@
         </a>
 
         <div style="margin-top: 20px;"
-             class="currency-wiget fade-in">
+             class="currency-widget fade-in">
             <div class="currency-rates">
                 <div class="rate-item">🇺🇸 USD: <span id="usd-rate">Загрузка...</span></div>
                 <div class="rate-item">🇪🇺 EUR: <span id="eur-rate">Загрузка...</span></div>
                 <div class="rate-item">🇷🇺 100 RUB: <span id="rub-rate">Загрузка...</span></div>
                 <div class="rate-item">🇨🇳 10 CNY: <span id="cny-rate">Загрузка...</span></div>
             </div>
+
+         <div class="currency-calc">
+            <input type="number" id="calc-amount" placeholder="Сумма" min="0">
+            <select> id="calc-currency">
+                <option value="USD">USD 🇺🇸</option>
+                <option value="EUR">EUR 🇪🇺</option>
+                <option value="RUB">RUB 🇷🇺</option>
+                <option value="CNY">CNY 🇨🇳</option>
+            </select>
+            <div class="calc-result-box">
+                = <span id="calc-result">0.00</span> BYN
+            </div>
         </div>
+      </div>
+
         <div style="margin-top: 30px;">
             <iframe class="video-frame"
             width="560"
